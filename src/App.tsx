@@ -6,6 +6,7 @@ import Layout from "./layouts/Layout";
 import ProtectedRoute from "./auth/ProtectedRoute";
 import ManageResturant from "./pages/ManageResturant";
 import Search from "./pages/Search";
+import DetailPage from "./pages/DetailPage";
 
 function App() {
   return (
@@ -25,6 +26,14 @@ function App() {
           element={
             <Layout showHero={false}>
               <Search />
+            </Layout>
+          }
+        />
+        <Route
+          path="/detail/:restaurantId"
+          element={
+            <Layout showHero={false}>
+              <DetailPage />
             </Layout>
           }
         />

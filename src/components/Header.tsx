@@ -10,7 +10,7 @@ const Header = () => {
           to="/"
           className="text-3xl font-bold tracking-tight text-orange-500"
         >
-          MernEats.com
+          <span className="text-2xl  text-orange-300">Order</span>Food
         </Link>
         <div className="md:hidden">
           <MobileNav />

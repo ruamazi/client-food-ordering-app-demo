@@ -31,8 +31,8 @@ const PaginationSelector = ({ page, pages, onPageChange }: Props) => {
           </PaginationItem>
         )}
 
-        {pageNumbers.map((number) => (
-          <PaginationItem>
+        {pageNumbers.map((number, i) => (
+          <PaginationItem key={i}>
             <PaginationLink
               href="#"
               onClick={() => onPageChange(number)}
